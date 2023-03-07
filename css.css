@@ -1,0 +1,78 @@
+    * {
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    header {
+        background-color: #9c9c9c;
+        padding: 15px;
+        text-align: center;
+        font-size: 10px;
+        color: white;
+    }
+    
+    .hai {
+        background-color: #f4f2f2;
+        width: 30%;
+        padding: 10px;
+        height: 30px;
+        text-align: left;
+    }
+    
+    .entry {
+        background-color: #f4f2f2;
+        width: 30%;
+        height: 30px;
+        padding: 10px;
+        font-size: 15px;
+        text-align: left;
+    }
+    
+    .laporan {
+        background-color: #f4f2f2;
+        padding: 10px;
+        width: 30%;
+        height: 30px;
+        font-size: 15px;
+        text-align: left;
+    }
+    
+    article {
+        margin-left: 280px;
+        margin-top: -290px;
+        margin-right: 290px;
+        border-style: solid;
+        border-block: 15px;
+        padding: 20px;
+        width: 78%;
+        background-color: #ffffff;
+        height: 300px;
+    }
+    
+    .membaca {
+        font-size: 15px;
+        text-align: center;
+    }
+    
+    .h4 {
+        border-style: solid;
+        border-spacing: 5px;
+        width: 78%;
+    }
+    
+    section:after {
+        float: left;
+        content: "";
+        display: table;
+        clear: both;
+    }
+    
+    @media (max-width: 600px) {
+        article {
+            width: 100%;
+            height: auto;
+        }
+    }
