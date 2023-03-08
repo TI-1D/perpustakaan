@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Data Anggota</title>
+        <link rel="stylesheet" href="form.css">
+        <style>
+           body{
+            font-family: 'Times New Roman', Times, serif;
+            color: rgb(5, 2, 7);
+           }
+        </style>
+        <script src="form.js"></script>
+    </head>
+    <body>
+       <h2>Input Data Anggota</h2>
+       <br>
+       <p><b>Input Data Anggota</b></p>
+       <div class="wadah">
+        <form method="post" action="" name="anggota" onsubmit="return cekform()">
+            <div class="row">
+                <div class="uku-10">
+                    <label for="idagt">ID Anggota</label>
+                </div>
+                <div class="uku-90">
+                    <input type="text" id="idagt" name="idagt" placeholder="ID Loo..">
+                </div>
+            </div>
+            <div class="row">
+                <div class="uku-10">
+                    <label for="txtnama">Nama</label>
+                </div>
+                <div class="uku-90">
+                    <input type="text" id="txtnama" name="txtnama" placeholder="Nama Loo..">
+                </div>
+            </div>
+            <div class="row">
+                <div class="uku-10">
+                    <label for="jkel">Jenis Kelamin</label>
+                </div>
+                <div class="uku-90">
+                    <input type="radio" id="jkel" name="jkel" value="P">Pria &nbsp;&nbsp;
+                </div>
+            </div>
+            <div class="row">
+                <div class="uku-10">
+                    <label for="jkel">  </label>
+                </div>
+                <div class="uku-90">
+                    <input type="radio" id="jkel" name="jkel" value="W">Wanita &nbsp;&nbsp;
+                </div>
+            </div>
+            <div class="row">
+                <div class="uku-10">
+                    <label for="alamat">Alamat</label>
+                </div>
+                <div class="uku-90">
+                    <textarea id="alamat" name="alamat" placeholder="Alamat Loo.."></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="uku-10">
+                    <label for="btn"> </label>
+                </div>
+                <div class="uku-90">
+                    <input type="submit" name="btn" value="Simpan">
+                </div>
+            </div>
+        </form>    
+       </div>
+    </body>
+</html>
