@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Transaksi Peminjaman</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+		<div class="pinjam">
+		<table>
+			<form method="post" action="" name="frmdaftar" onsubmit="return datatransaksi()">
+			<h1>Input Transaksi Peminjaman</h1>
+			<tr>
+			<td>Judul buku</td>
+			<td>:</td>
+			<td><input type="text" name="Judul" id="Judulbuku"></td>
+			</tr>
+
+			<tr>
+			<td>Nama Mahasiswa</td>
+			<td>:</td>
+			<td><input type="text" name="nama" id="NamaMahasiswa"></td>
+			</tr>
+
+			<tr>
+			<td>Nim</td>
+			<td>:</td>
+			<td><input type="text" name="nim" id="Nim"></td>
+			</tr>
+
+			<tr>
+			<td>Tanggal Peminjaman</td>
+			<td>:</td>
+			<td><input type="date" name="tanggalpinjam" id="tanggalpinjam"></td>
+			</tr>
+
+			<tr>
+			<td>Tanggal Kembali</td>
+			<td>:</td>
+			<td><input type="date" name="tanggalkembali" id="tanggalkembali"></td>
+			</tr>
+
+			<tr>
+				<td><input type="submit" name="tblsimpan" value="save" class="savetransaksi"></td>
+				<td><input type="reset" name="tblsimpan" value="reset" class="savetransaksi"></td>
+	</form>
+			</tr>
+		</div>
+	<script type="text/javascript">
+	function datatransaksi(){
+	//buat variabel untuk menampung inputan
+	Judulbuku= document.getElementById('Judulbuku');
+	NamaMahasiswa = document.getElementById('NamaMahasiswa');
+	Nim = document.getElementById('Nim');
+	tanggalpinjam = document.getElementById('tanggalpinjam"');
+	tanggalkembal = document.getElementById('tanggalkembal"');
+	if(Judulbuku.value==''){
+		alert('Judul Buku tidak boleh kosong');
+		Judulbuku.focus();
+		return false;
+	}else if(NamaMahasiswa.value==''){
+		alert('Nama Mahasiswa Tidak Boleh kosong');
+		NamaMahasiswas.focus();
+		return false;
+	}else if(Nim.value==''){
+		alert('Nim Tidak Boleh kosong');
+		Nim.focus();
+		return false;
+	}else if(tanggalpinjam.value==''){
+		alert('tanggal peminjaman Tidak Boleh kosong');
+		tanggalpinjam.focus();
+		return false;
+	}else if(tanggalkembal.value==''){
+		alert('tanggal peminjaman Tidak Boleh kosong');
+		tanggalkembal.focus();
+		return false;
+	}else{
+		alert('Terimah Kasih Telah Mengisi Data Transaksi');
+	}
+
+}
+	</script>
+</body>
+</html>

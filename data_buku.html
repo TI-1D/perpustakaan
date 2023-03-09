@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Data Buku</title>
+</head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<body>
+	<div class="databuku">
+		<h1>Form Data Buku</h1>
+		<form method="post" action="" name="frmdaftar" onsubmit="return databuku()">
+		Judul Buku <input type="text" name="JudulBuku" id="JudulBuku">
+		Penulis <input type="text" name="Penulis" id="Penulis">
+		Penerbit <input type="text" name="Penerbit" id="Penerbit">
+		<input type="submit" name="tblsimpan" value="save" class="databukusimpan">
+		<input type="reset" name="tblsimpan" value="reset" class="databukusimpan">
+	</form>
+	
+	<script type="text/javascript">
+	function databuku(){
+	//buat variabel untuk menampung inputan
+	JudulBuku= document.getElementById('JudulBuku');
+	Penulis = document.getElementById('Penulis');
+	Penerbit = document.getElementById('Penerbit');
+	if(JudulBuku.value==''){
+		alert('Judul Buku tidak boleh kosong');
+		JudulBuku.focus();
+		return false;
+	}else if(Penulis.value==''){
+		alert('Penulis Tidak Boleh kosong');
+		Penulis.focus();
+		return false;
+	}else if(Penerbit.value==''){
+		alert('Penerbit Tidak Boleh kosong');
+		Penerbit.focus();
+		return false;
+}else{
+	alert('Terimah Kasih Telah Mengisi Form Data Buku');
+}
+
+}
+</script>
+</body>
+</html>

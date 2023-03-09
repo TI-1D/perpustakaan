@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Kelola Data Anggota</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+	<div class="kotakdata">
+		<h1>Form Data Anggota</h1>
+		<form method="post" action="" name="frmdaftar" onsubmit="return cekform()">
+		Id Anggota : <input type="text" name="txtidanggota" id="txtidanggota"> <br>
+		Nama : <input type="text" name="Nama" id="Nama"> <br>
+		Jenis Kelamin <br><input type="radio" name="jenis" id="jenis">PRIA
+		<input type="radio" name="jenis" id="jenis">WANITA<br>
+		Alamat <input type="textarea" name="Alamat" id="Alamat"><br><br>
+		<input type="submit" name="tblsimpan" value="save" class="save">
+		<input type="reset" name="tblsimpan" value="reset" class="save">
+	</form>
+
+	<script type="text/javascript">
+	function cekform(){
+	//buat variabel untuk menampung inputan
+	idanggota = document.getElementById('txtidanggota');
+	Nama = document.getElementById('Nama');
+	jenis = document.getElementById('jenis');
+	Alamat = document.getElementById('Alamat');
+
+	if(idanggota.value==''){
+		alert('id anggota tidak boleh kosong');
+		idanggota.focus();
+		return false;
+	}else if(Nama.value==''){
+		alert('Nama tidak boleh kosong');
+		Nama.focus();
+		return false;
+	}else if(Nama.value.length <= 3){
+		alert('nama minimal 3 karakter');
+		Nama.focus();
+		return false;
+	}else if(jenis.value==''){
+		alert('jenis kelamin tidak boleh kosong');
+		jenis.focus();
+		return false;
+	}else if(Alamat.value==''){
+		alert('Alamat tidak boleh kosong');
+		Alamat.focus();
+		return false;
+	}else{
+		alert('Terimah Kasih Telah Mengisi Form Data Anggota');
+	}
+
+}
+	</script>
+</body>
+</html>
