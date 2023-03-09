@@ -1,0 +1,1 @@
+alert ('Data Anda kosong');
