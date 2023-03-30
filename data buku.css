@@ -1,0 +1,62 @@
+body {
+    font-family:Arial, Helvetica, sans-serif ;
+}
+h1 {
+    text-align: center;
+    background-color: pink;   
+}
+
+
+h4 {
+    text-align: center;
+    background-color: pink;
+}
+
+
+ul{
+    position:fixed;
+    width: 250px;
+    height: 100%;
+    left: 0;
+    background: pink;
+}
+
+
+h2 {
+    text-align: center;  
+     
+}
+
+
+img.kanan{
+   
+  float: right;
+  width: 350px;
+  height: 350%;
+}
+
+img.tengah{
+    margin-left: auto;
+    display: block;
+    width: 400px;
+    height: 400%;
+}
+
+img.kiri{
+    margin-right: auto;
+    display: block;
+    width: 200px;
+    height: 200%;
+}
+
+
+
+
+
+    
+    
+
+
+
+
+
