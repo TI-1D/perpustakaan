@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="perpus.js"></script>
     <title>Document</title>
+    <link rel="stylesheet" href="forminput.css">
+    <script src="perpus.js"></script>
 </head>
-
 <body>
     <form method="post" action="" name="frmdata" onsubmit="return formdaftar()">
         <table>
-            <tr class="judul">Input Nama Anggota</tr>
-            <hr>
+            <tr>
+                <th colspan="2" class="judul">Input Nama Anggota</th>
+            </tr>
             <tr>
                 <td>Id Anggota</td>
                 <td><input type="text" id="idanggota"></td>
@@ -34,11 +34,10 @@
                 <td><textarea name="txtalamat" id="alamat" cols="30" rows="5"></textarea></td>
             </tr>
             <tr>
-                <td><input type="submit" name="tblsimpan" id="submit" value="SAVE"></td>
+                <td colspan="2"><input type="submit" name="tblsimpan" id="submit" value="SAVE"></td>
             </tr>
         </table>
     </form>
     <a href="perpus.html">Kembali ke Beranda</a>
 </body>
-
 </html>

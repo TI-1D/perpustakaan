@@ -1,0 +1,70 @@
+/* CSS untuk tabel */
+table {
+  margin: 20px auto;
+  border-collapse: collapse;
+  background-color: #fff;
+  width: 90%;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+  text-align: center;
+  padding: 12px;
+}
+
+th {
+  background-color: #6c5ce7;
+  color: #fff;
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* CSS untuk tombol */
+.btn {
+  display: inline-block;
+  background-color: #6c5ce7;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.btn:hover {
+  background-color: #563ccf;
+}
+
+/* CSS untuk judul halaman */
+h1 {
+  text-align: center;
+  font-size: 36px;
+  color: #6c5ce7;
+  margin-top: 40px;
+}
+
+/* CSS untuk gambar */
+.book-cover {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* CSS untuk link kembali */
+.back-link {
+  display: inline-block;
+  color: #6c5ce7;
+  margin-top: 20px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
